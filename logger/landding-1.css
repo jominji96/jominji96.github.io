@@ -1,0 +1,173 @@
+@charset "utf-8";
+
+/* reset.css */
+*{margin: 0; padding: 0;}
+/* a{text-decoration: none;} */
+
+/* header영역 */
+header{
+    /* 브라우저 한 페이지기본 사이즈로 설정 */
+    height: 100vh;
+    background-image: url(./img/Logger.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#head{
+    width: 500px;
+    text-align: center;
+    color: aliceblue;
+    background-color: rgba(0,0,0,0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+#head > p:nth-child(1){
+    font-size: 4rem;
+    letter-spacing: 1rem;
+    font-weight: bolder;
+}
+#head > p:nth-child(2){
+    font-size: 1.2rem;
+    margin: 1rem;
+    font-weight: 600;
+}
+/* #head > div:nth-child(3) */
+.button{
+    background-color: rgb(253, 133, 153);
+    width: 150px;
+    font-size: 0.65rem;
+    padding: 10px;
+    border: 3px solid #fff;
+    border-radius: 5px;
+    margin: auto;
+    cursor: pointer;
+}
+/* #head > div:nth-child(3) */
+.button:hover,
+.button2:hover{
+    background-color: rgb(204, 88, 133);
+}
+
+/* section id="sns" 영역 */
+section#sns{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+section#sns > .card{
+    width: 300px;
+    text-align: center;
+}
+section#sns > .card > .icon{
+    background-color: #aaa;
+    width: 70px;
+    height: 70px;
+    margin: 20px auto;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+section#sns > .card > .icon > i{
+    font-size: 2rem;
+    color: #fff;
+}
+section#sns > .card > p:nth-of-type(1){
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+section#sns > .card > p:nth-of-type(2){
+    font-size: 0.8rem;
+    color: #aaa;
+    line-height: 2;
+    padding: 10px;
+}
+section#sns > .card > a{
+    text-decoration: none;
+    color: #5d9ab2
+}
+section#sns > .card > a > span{
+    font-weight: bolder;
+}
+
+/* section id="detail" 영역 */
+section#detail{
+    background-color: #a2d4f5;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    margin: 30px;
+}
+section#life{
+    background-color: #f5f4aa;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    margin: 30px;
+}
+section#detail > div,
+section#life > div{
+    width: 400px;
+    padding: 50px;
+}
+section#detail > .img{
+    background-image: url(./img/coffee.jpg);
+    background-size: cover;
+    background-position: center;
+}
+section#life > .img{
+    background-image: url(./img/place.jfif);
+    background-size: cover;
+    background-position: center;
+}
+section#detail > .txt > p:nth-of-type(1),
+section#life > .txt > p:nth-of-type(1){
+    font-size: 1.3rem;
+    font-weight: bolder;
+}
+section#detail > .txt > p:nth-of-type(2),
+section#life > .txt > p:nth-of-type(2){
+    font-size: 0.8rem;
+    line-height: 2;
+    margin: 10px 0;
+}
+section#detail > .txt > p:nth-of-type(3),
+section#life > .txt > p:nth-of-type(3){
+    margin: 0;
+}
+
+/* section id=footer 영역 */
+footer{
+    background-color: #2b664a;
+    color: #fff;
+    padding: 20px;
+}
+footer > div > p:nth-of-type(1){
+    font-size: 1.5rem;
+    letter-spacing: 0.5rem;
+    font-weight: 400;
+}
+
+footer a{
+    color: #fff;
+    font-size: 0.8rem;
+}
+footer > nav{
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+}
+footer > nav > div{
+    flex: 1;
+}
+footer > nav > div > p{
+    border-bottom: 1px solid #fff;
+}
+footer > nav > div > ul{
+    list-style: none;
+}
+footer > nav > div > ul > li{
+    padding: 5px 0;
+}
