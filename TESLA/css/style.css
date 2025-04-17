@@ -143,7 +143,15 @@ section:nth-of-type(4){
   background-size: cover;
   background-position: center;
 }
-
+section:nth-of-type(5){
+  background-image: url(../assets/image/Desktop_SolarPanels.jpg);
+  background-size: cover;
+  background-position: center;
+}section:nth-of-type(6){
+  background-image: url(../assets/image/Homepage-Accessories-Desktop-US.jfif);
+  background-size: cover;
+  background-position: center;
+}
 section > .last{
   position: absolute;
   width: 100%;
@@ -165,8 +173,7 @@ footer{
 
 @media screen and (min-width: 1024px){
   header{
-      background-image: url(../assets/image/Homepage-Model-Y-2-Hero-Desktop-APAC-LHD.jfif);
-    }
+    background-image: url(../assets/image/Homepage-Model-Y-2-Hero-Desktop-APAC-LHD.jfif);}
   header > nav > p{display: none;}
   header > nav > ul{display: block;}
   section > video {aspect-ratio: 16/9;}
@@ -174,6 +181,10 @@ footer{
     background-image: url(../assets/image/Homepage-Model-3-Mobile-US.png);}
   section:nth-of-type(3){
     background-image: url(../assets/image/Homepage-Model-S-Mobile-US.png);}
-    section:nth-of-type(4){
-      background-image: url(../assets/image/Homepage-Model-X-Mobile-US.jfif);}
-}
+  section:nth-of-type(4){
+    background-image: url(../assets/image/Homepage-Model-X-Mobile-US.jfif);}
+  section:nth-of-type(5){
+    background-image: url(../assets/image/Desktop_SolarPanels.jpg);}
+  section:nth-of-type(6){
+    background-image: url(../assets/image/Homepage-Accessories-Desktop-US.jfif);}
+    }
