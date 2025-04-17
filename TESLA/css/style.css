@@ -147,7 +147,8 @@ section:nth-of-type(5){
   background-image: url(../assets/image/Desktop_SolarPanels.jpg);
   background-size: cover;
   background-position: center;
-}section:nth-of-type(6){
+}
+section:nth-of-type(6){
   background-image: url(../assets/image/Homepage-Accessories-Desktop-US.jfif);
   background-size: cover;
   background-position: center;
