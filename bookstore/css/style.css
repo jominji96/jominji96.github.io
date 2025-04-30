@@ -1,0 +1,167 @@
+@charset "utf-8";
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.book {
+  transform-style: preserve-3d;
+  position: relative;
+  width:100%;
+  height: 100%;
+  margin: 0 auto;
+  transition: all 0.5s;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+/* .book:hover{
+transform: rotateY(40deg);
+} */
+.book:not(.flipped):hover {
+  transform: rotateY(40deg);
+}
+.book > .page {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+}
+.book > .page > div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateZ(35px);
+  backface-visibility: hidden;
+}
+.book > .page > .front {
+  background-image: url(../img/front.jfif);
+  /* background-size: cover; */
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.book > .page > .back {
+  background-image: url(../img/back.jfif);
+  transform: rotateY(180deg) translateZ(35px);
+  background-size: cover;
+  /* background-size: contain;
+  background-repeat: no-repeat; */
+}
+.book > .side {
+  left: -35px;
+  width: 70px;
+  height: 100%;
+  background-image: url(../img/side.jfif);
+  background-size: cover;
+  /* background-size: contain;
+  background-repeat: no-repeat; */
+  transform: rotateY(-90deg);
+}
+.flipped {
+  transform: rotateY(180deg);
+}
+.front,
+.back,
+.side {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/*  */
+main{
+  display: flex;
+  width: 1300px;
+  margin: 50px auto;
+  gap: 2rem;
+}
+
+/* common */
+.border-box{
+  border: 1px solid #aaa;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  padding: 1px 5px;
+  margin: 0 2px;
+}
+
+.r-border{
+  border-right: 1px solid #aaa;
+}
+
+.text-red{
+  color: tomato;
+}
+
+.text-big{
+  font-size: 1.5rem;
+}
+
+.text-w{
+  font-weight: bolder;
+}
+
+.redius{
+  border-radius: 10px;
+  border: 1px solid tomato;
+  padding: 2px;
+  text-align: center;
+}
+
+section#book{
+    width: 35%;
+    perspective: 1000px;
+}
+
+/* 디테일 스타일 */
+section#detail{
+  width: 60%;
+}
+
+section#detail > div{
+  padding: 10px 0;
+  border-bottom: 1px solid #aaa;
+}
+
+section#detail > .one > div{
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  font-size: 0.8rem;
+}
+
+section#detail > .one > div > p{
+  padding: 0 6px;
+  gap: 5px;
+}
+
+section#detail > .two > div{
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  gap: 30px;
+}
+
+section#detail > .two > div > p:nth-child(1){
+  width: 120px;
+}
+
+section#detail > .two > div > p > span{
+  display: inline-block;
+}
+
+.del{
+  background-color: rgb(198, 230, 243);
+  padding: 10px;
+}
+.del > span{
+  display: inline-block;
+}
+.del > span:nth-child(1){
+  background-color: yellowgreen;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+}

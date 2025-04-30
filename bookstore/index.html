@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="Ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>yes24북 상세화면</title>
+</head>
+  <main>
+    <section id="book">
+      <div class="book">
+      <div class="page">
+        <div class="front"></div>
+        <div class="back"></div>
+      </div>
+      <div class="side"></div>
+    </div>
+    <script>
+      const book = document.querySelector(".book");
+      book.addEventListener("click", () => {
+        book.classList.toggle("flipped");
+      });
+    </script>
+    </section>
+    <section id="detail">
+      <div class="one">
+        <div>
+          <p class="border-box">소득공제</p>
+          <p class="border-box">강력추천</p>
+          <p class="border-box"><a href="#">오늘의책</a></p>
+        </div>
+        <h2>[예스리커버]사장학개론</h2>
+        <div>
+          <p class="r-border"><a href="#">김승호 저</a></p>
+          <p class="r-border"><a href="#">스노우폭스북스</a></p>
+          <p>2023년 04월 19일</p>
+        </div>
+        <div>
+          <p><a href="#">★★★★☆ 9.2</a></p>
+          <p class="border-box"><a href="$">▽</a></p>
+          <p class="r-border"><a href="#">회원리뷰(362건)</a></p>
+          <p>판매지수 41,844</p>
+          <p class="border-box"><a href="#">?</a></p>
+          <span>베스트</span>
+          <p class="r-border"><a href="#">경제경영 99위</a></p>
+          <p>국내도서 top20 15주</p>
+        </div>
+      </div>
+      <div class="two">
+        <div>
+          <p class="redius text-red">
+            <i class="fa-solid fa-gift"></i>구매혜택
+          </p>
+        </div>
+        <div>
+          <p>정가</p>
+          <p>25,000원</p>
+        </div>
+        <div>
+          <p class="text-w">판매가</p>
+          <p class="text-red text-big text-w">22,500원
+          <span class="text-red" style="font-size: 1rem; font-weight: normal;">(10% 할인)</span>
+          </p>
+        </div>
+        <div>
+          <p class="text-w">크레마머니
+            <br>최대혜택가
+            <span class="border-box">
+              <a href="#">?</a></span>
+          </p>
+          <p class="text-big text-w">21,000원</p>
+        </div>
+        <div>
+          <p>yes포인트
+            <span class="border-box">
+              <a href="#">?</a></span>
+          </p>
+          <p>1,250원
+            <span>(5% 적립)</span>
+          </p>
+        </div>
+        <div>
+          <p></p>
+          <p>5만원 이상 구매 시 2천원 추가적립
+            <span class="border-box">
+              <a href="#">?</a></span>
+          </p>
+        </div>
+      </div>
+      <div class="two">
+        <div>
+          <p>결제혜택</p>
+          <p>카드/간편결제 혜택을 확인하세요
+            <span class="border-box">▽</span>
+          </p>
+        </div>
+      </div>
+      <div class="two">
+        <div>
+          <p>배송안내
+            <span class="border-box">＞</span>
+          </p>
+          <P>서울특별시 영등포구 은행로11 (여의도동,일신빌딩)
+            <span><a href="#">지역변경∨</a></span>
+          </P>
+        </div>
+        <div class="del">
+          <span>하루배송</span>
+          <span>19시까지 주문하면 내일(4/22, 화) 도착예정</span>
+        </div>
+        <p>배송비 : 무료
+          <span class="border-box">?</span>
+        </p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
